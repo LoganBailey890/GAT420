@@ -96,9 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d97692f0cf9cf924697f2e33dac7f33b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wanderDistance: 1
-  wanderRadius: 3
-  wanderDisplacement: 5
+  wanderDisplacement: 20.7
+  wanderRadius: 0.8
+  wanderDistance: 4.9
 --- !u!33 &2987255627745373288
 MeshFilter:
   m_ObjectHideFlags: 0

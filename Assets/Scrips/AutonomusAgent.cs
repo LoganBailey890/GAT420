@@ -19,6 +19,10 @@ public class AutonomusAgent : Agent
         Vector3 acceleration = Vector3.zero;
 
         GameObject[] gameObjects = perception.GetGameObjects();
+        if(gameObjects.Length ==0)
+        {
+            acceleration += steering.Wander(this);
+        }
         //seek //flee
         if(gameObjects.Length != 0)
         { 
@@ -39,5 +43,8 @@ public class AutonomusAgent : Agent
         {
             transform.rotation = Quaternion.LookRotation(velocity);
         }
+
+        transform.position = Utilitys.Wrap(transform.position, new Vector3(-10, -10, -10), new Vector3(10, 10, 10));
+
     }
 }
