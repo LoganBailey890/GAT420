@@ -5,15 +5,19 @@ TagManager:
   serializedVersion: 2
   tags:
   - Agent1
+  - WaypointAgent
+  - SearchAgent
+  - Agent2
+  - Utility
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - World
   - Water
   - UI
   - Spawner
-  - 
+  - Node
   - 
   - 
   - 
